@@ -32,12 +32,14 @@ class Book {
     }
 }
 
+
 class Library {
     private final List<Book> books;
 
     public Library() {
         books = new ArrayList<>();
     }
+
 
     public void addBook(Book book) {
         books.add(book);
@@ -54,6 +56,8 @@ class Library {
             }
         }
     }
+
+
 
     public Book findBookByTitle(String title) {
         for (Book book : books) {
@@ -76,6 +80,8 @@ class Library {
         return false;
     }
 }
+
+
 
 public class LibraryManagementSystem {
     public static void main(String[] args) {
@@ -120,6 +126,8 @@ public class LibraryManagementSystem {
         }
     }
 
+
+
     private static void addBookToLibrary(Scanner scanner, Library library) {
         scanner.nextLine();
         System.out.print("Enter book title: ");
@@ -145,6 +153,8 @@ public class LibraryManagementSystem {
             System.out.println("Book not found.");
         }
     }
+
+
 
     private static void removeBookByIsbn(Scanner scanner, Library library) {
         scanner.nextLine();
